@@ -1,0 +1,45 @@
+\documentclass[14pt,aspectratio=169]{beamer}
+\usepackage{pgfpages}
+\usepackage{fancyvrb}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\ifnotes
+\setbeamertemplate{note page}[plain]
+\setbeameroption{show notes on second screen=right}
+\fi
+
+\usetheme{auriga}
+\usecolortheme{auriga}
+
+% define some colors for a consistent theme across slides
+\definecolor{red}{RGB}{181, 23, 0}
+\definecolor{blue}{RGB}{0, 118, 186}
+\definecolor{gray}{RGB}{146, 146, 146}
+
+\title{Fancy Title: Followed by Some More Text}
+
+\author{\underline{Alyssa P. Hacker} \inst{1} \and Ben Bitdiddle \inst{2} \and Lem E. Tweakit \inst{2}}
+
+\institute[shortinst]{\inst{1} Some Institute \samelineand \inst{2} Another Institute}
+
+\begin{document}
+
+{
+  % rather than use the frame options [noframenumbering,plain], we make the
+  % color match, so that the indicated page numbers match PDF page numbers
+  \setbeamercolor{page number in head/foot}{fg=background canvas.bg}
+  \begin{frame}
+    \titlepage
+  \end{frame}
+}
+
+\input{slides/bullets}
+\input{slides/split}
+\input{slides/figure}
+\input{slides/centered}
+\input{slides/monospace}
+\input{slides/brackets}
+\input{slides/link}
+
+\end{document}

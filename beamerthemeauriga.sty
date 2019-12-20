@@ -1,0 +1,112 @@
+% Auriga theme
+% https://github.com/anishathalye/auriga
+
+% ====================
+% Dependencies
+% ====================
+
+\RequirePackage{exscale}
+\RequirePackage{ragged2e}
+\RequirePackage{changepage}
+\RequirePackage{fontspec}
+\RequirePackage{xpatch}
+
+% ====================
+% Fonts
+% ====================
+
+\newfontfamily\Raleway[Ligatures=TeX]{Raleway}
+\newfontfamily\Lato[Ligatures=TeX]{Lato}
+
+\usefonttheme{professionalfonts}
+
+\setsansfont{Lato}[
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic
+]
+\setmonofont{Hack}
+
+\setbeamerfont{title page}{family=\Raleway}
+\setbeamerfont{title page title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{title page author}{size=\footnotesize}
+\setbeamerfont{title page institute}{size=\scriptsize}
+\setbeamerfont{frametitle}{family=\Raleway,size=\large,series=\bfseries}
+\setbeamerfont{caption}{size=\footnotesize}
+
+% ====================
+% Macros
+% ====================
+
+\newcommand{\samelineand}{\qquad}
+
+% ====================
+% Elements
+% ====================
+
+% Itemize
+
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}[circle]
+\xpatchcmd{\itemize}
+  {\def\makelabel}
+  {\ifnum\@itemdepth=1\relax
+     \setlength\itemsep{3ex}% separation for first level
+   \else
+     \ifnum\@itemdepth=2\relax
+       \setlength\itemsep{0.5ex}% separation for second level
+     \else
+       \ifnum\@itemdepth=3\relax
+         \setlength\itemsep{0.5ex}% separation for third level
+   \fi\fi\fi\def\makelabel
+  }
+ {}
+ {}
+
+% Equation
+\setlength\belowdisplayshortskip{2ex}
+
+% Caption
+\setlength{\abovecaptionskip}{2ex}
+\setlength{\belowcaptionskip}{1ex}
+\setbeamertemplate{caption}
+{
+    {\usebeamerfont{caption}\insertcaption}
+}
+
+% Navigation
+\beamertemplatenavigationsymbolsempty
+
+% ====================
+% Components
+% ====================
+
+% Title page
+\setbeamertemplate{title page}
+{
+    \begin{centering}
+        \vskip5ex plus 1filll
+        {\usebeamerfont{title page title}\usebeamercolor[fg]{title page}\inserttitle\\[1.5ex]}
+        {\usebeamerfont{title page author}\usebeamercolor[fg]{title page}\insertauthor\\[2ex]}
+        {\usebeamerfont{title page institute}\usebeamercolor[fg]{title page}\insertinstitute\\[1ex]}
+        \vskip0pt plus 1filll
+    \end{centering}
+}
+
+% Footer
+\setbeamertemplate{footline}{
+    \hfill%
+    \usebeamercolor[fg]{page number in head/foot}%
+    \usebeamerfont{page number in head/foot}%
+    \hspace{2em}%
+    \insertframenumber\kern1em\vskip2ex%
+}
+
+% Frame title
+\setbeamertemplate{frametitle}{
+    \nointerlineskip
+    \vskip2ex
+    {\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle}
+}

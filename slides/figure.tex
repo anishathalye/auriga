@@ -1,0 +1,22 @@
+\begin{frame}{Full-slide figure}
+
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[scale=0.7]
+      \begin{axis}[
+          scale only axis,
+          no markers,
+          domain=0:2*pi,
+          samples=100,
+          axis lines=center,
+          axis line style={-},
+          ticks=none]
+        \addplot[red] {sin(deg(x))};
+        \addplot[blue] {cos(deg(x))};
+      \end{axis}
+    \end{tikzpicture}
+    \caption{The figure's caption}
+  \end{figure}
+
+
+\end{frame}

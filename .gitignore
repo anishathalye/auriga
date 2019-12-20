@@ -1,0 +1,14 @@
+# output
+*.pdf
+
+# intermediate files
+*.aux
+*.bbl
+*.blg
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.nav
+*.vrb

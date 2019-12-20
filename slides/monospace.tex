@@ -1,0 +1,23 @@
+\begin{frame}[fragile]{A slide with some code}
+
+	\begin{columns}
+		\begin{column}{0.5\linewidth}
+			\footnotesize
+			\begin{Verbatim}[commandchars=\\\{\}]
+/* some code */
+def foo(x):
+  return x**0.5 + 2*x
+
+\color{blue}/* some can be highlighted */
+\color{blue}foo(3)
+      \end{Verbatim}
+    \end{column}
+    \begin{column}{0.5\linewidth}
+      {\color{red} Some explanatory text, in red, with some \texttt{monospace} text.}
+      There might be some math, too:
+
+      $$\sqrt{x} + 2x$$
+    \end{column}
+  \end{columns}
+
+\end{frame}
