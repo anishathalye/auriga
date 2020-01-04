@@ -1,4 +1,4 @@
-# Auriga
+# Auriga [![Build Status](https://travis-ci.com/anishathalye/auriga.svg?branch=master)](https://travis-ci.com/anishathalye/auriga)
 
 Auriga is a minimalist LaTex [beamer] presentation theme.
 
