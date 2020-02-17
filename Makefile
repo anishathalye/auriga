@@ -1,33 +1,9 @@
-BUILD := \
-	p \
-	p-notes \
+.PHONY: main clean FORCE
 
+main: p.pdf p-notes.pdf
 
-DEPS := \
-	beamerthemeauriga.sty \
-	beamercolorthemeauriga.sty \
-	presentation.tex \
-	$(shell find slides -name '*.tex') \
-
-
-LATEX  := lualatex
-
-LATEXOPTS := -interaction nonstopmode
-
-TARGETS := $(patsubst %, %.pdf, $(BUILD))
-
-# phony targets
-
-all: $(TARGETS)
+%.pdf: FORCE
+	latexmk -pdflatex='lualatex -interaction nonstopmode' -pdf $(patsubst %.pdf,%.tex,$@)
 
 clean:
-	rm -rf *.pdf *.aux *.bbl *.blg *.log *.nav *.out *.snm *.toc *.vrb
-
-.PHONY: all clean
-
-# main targets
-
-%.pdf: %.tex $(DEPS)
-	$(eval SRC_$@ = $(patsubst %.tex, %, $<))
-	$(LATEX) $(LATEXOPTS) $(SRC_$@)
-	$(LATEX) $(LATEXOPTS) $(SRC_$@)
+	latexmk -pdf -C

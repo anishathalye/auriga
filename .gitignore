@@ -12,3 +12,5 @@
 *.toc
 *.nav
 *.vrb
+*.fdb_latexmk
+*.fls
