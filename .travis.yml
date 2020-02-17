@@ -11,5 +11,6 @@ addons:
       - texlive-luatex
       - texlive-xetex
       - fonts-hack-ttf
+      - latexmk
 script:
   - make p.pdf p-notes.pdf
