@@ -18,6 +18,7 @@ If you're looking for a beamer poster theme, take a look at [Gemini].
 # Dependencies
 
 - A TeX installation that includes [LuaTeX]
+    - You also need `latexmk` if you want to use the provided Makefile
 - LaTeX package dependencies including beamer (these usually come with your TeX
   installation, but if not, you can get them from [CTAN])
 - [Raleway], [Lato], and [Hack], which are all available under Open Font
