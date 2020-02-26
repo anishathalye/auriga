@@ -31,7 +31,7 @@ If you're looking for a beamer poster theme, take a look at [Gemini].
 1. Add slides in `slides/`, using the existing slides as templates. Add include
    lines for slides in `presentation.tex`.
 
-1. Run `make` to build your poster. This builds both `p.pdf`, the raw version
+1. Run `make` to build your presentation. This builds both `p.pdf`, the raw version
    of the slides, and `p-notes.pdf`, a version of slides that has speaker notes
    included. These can be viewed using a program like
    [Présentation.app][presentation-macos].
