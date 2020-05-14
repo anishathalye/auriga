@@ -55,7 +55,7 @@ implementing a new feature.
 
 # License
 
-Copyright (c) 2019 Anish Athalye. Released under the MIT License. See
+Copyright (c) 2019-2020 Anish Athalye. Released under the MIT License. See
 [LICENSE.md][license] for details.
 
 [beamer]: https://github.com/josephwright/beamer
