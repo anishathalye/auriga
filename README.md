@@ -36,6 +36,11 @@ If you're looking for a beamer poster theme, take a look at [Gemini].
    included. These can be viewed using a program like
    [Présentation.app][presentation-macos].
 
+## Notes
+
+If you're looking to use Auriga with R Markdown, see
+[this example](https://github.com/jrosell/rmarkdown-beamer-presentation).
+
 # Design goals
 
 * **Minimal**: clean and easy to read, so that the emphasis is on the content
