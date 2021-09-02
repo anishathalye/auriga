@@ -3,15 +3,15 @@
 Auriga is a minimalist LaTex [beamer] presentation theme.
 
 <p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/auriga/assets/auriga.pdf">
-<img src="https://raw.githubusercontent.com/anishathalye/auriga/assets/auriga.png">
+<a href="https://raw.githubusercontent.com/anishathalye/assets/master/auriga/auriga.pdf">
+<img src="https://raw.githubusercontent.com/anishathalye/assets/master/auriga/auriga.png">
 </a>
 </p>
 
 See how the [Auriga][auriga-presentation] themed presentation (left) compares
 to the beamer [default][beamer-default-presentation] (right):
 
-![Comparison](https://raw.githubusercontent.com/anishathalye/auriga/assets/side-by-side.png)
+![Comparison](https://raw.githubusercontent.com/anishathalye/assets/master/auriga/side-by-side.png)
 
 If you're looking for a beamer poster theme, take a look at [Gemini].
 
@@ -59,8 +59,8 @@ Copyright (c) 2019-2020 Anish Athalye. Released under the MIT License. See
 [LICENSE.md][license] for details.
 
 [beamer]: https://github.com/josephwright/beamer
-[auriga-presentation]: https://raw.githubusercontent.com/anishathalye/auriga/assets/auriga.pdf
-[beamer-default-presentation]: https://raw.githubusercontent.com/anishathalye/auriga/assets/beamer-default.pdf
+[auriga-presentation]: https://raw.githubusercontent.com/anishathalye/assets/master/auriga/auriga.pdf
+[beamer-default-presentation]: https://raw.githubusercontent.com/anishathalye/assets/master/auriga/beamer-default.pdf
 [Gemini]: https://github.com/anishathalye/gemini
 [LuaTeX]: http://www.luatex.org/
 [CTAN]: https://ctan.org/
