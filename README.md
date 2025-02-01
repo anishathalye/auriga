@@ -1,4 +1,4 @@
-# Auriga [![Build Status](https://github.com/anishathalye/auriga/workflows/CI/badge.svg)](https://github.com/anishathalye/auriga/actions?query=workflow%3ACI)
+# Auriga [![Build Status](https://github.com/anishathalye/auriga/actions/workflows/ci.yml/badge.svg)](https://github.com/anishathalye/auriga/actions/workflows/ci.yml)
 
 Auriga is a minimalist LaTex [beamer] presentation theme.
 
