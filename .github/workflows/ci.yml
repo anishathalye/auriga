@@ -17,7 +17,7 @@ jobs:
           lmodern
           texlive-luatex
           texlive-xetex
-          fonts-hack-ttf
+          fonts-hack
           latexmk
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
       - run: make p.pdf p-notes.pdf
